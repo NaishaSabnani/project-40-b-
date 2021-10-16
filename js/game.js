@@ -108,10 +108,18 @@ class Game{
                           if (fruitGroup.get(i).isTouching(players)) {
                               fruitGroup.get(i).destroy();
                               
-                              
+                             // calculate the score. 
+                                //player.score = 1;
+                                //player.score = player.score - 1;
                                 player.score = player.score + 1;
-                                
-                            player.score.update()
+                                //score = score + 1;
+
+                                //Update the score in the database
+
+                                //score.update()
+                                //player.score.update()
+                                player.update();
+                                //update();
                             
                           }
                           
